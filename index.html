@@ -8,6 +8,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css"
+    />
     <link rel="stylesheet" href="./assets/styles.css" />
     <title>Taskmaster Pro</title>
   </head>
@@ -38,46 +42,47 @@
       </header>
       <main class="col-12 col-lg-9 d-flex flex-column">
         <div class="m-5 row justify-content-around">
-          <div class="col">
+          <div class="col-12 col-md-6 col-xl-3 mb-3">
             <div class="card">
-              <h4 class="card-header bg-dark text-light">To Do</h4>
-              <ul id="list-toDo" class="list-group-flush"></ul>
+              <h4
+                class="card-header bg-dark text-light d-flex align-items-center"
+              >
+                To Do
+              </h4>
+              <ul id="list-toDo" class="list-group list-group-flush"></ul>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-xl-3 mb-3">
             <div class="card">
-              <h4 class="card-header bg-dark text-light">In Progress</h4>
-              <ul id="list-inProgress" class="list-group-flush">
-                <li class="list-group-item">
-                  <span class="badge badge-primary badge-pill">05/28/2020</span>
-                  <p class="m-1">Sample task in progress</p>
-                </li>
-              </ul>
+              <h4
+                class="card-header bg-dark text-light d-flex align-items-center"
+              >
+                In Progress
+              </h4>
+              <ul id="list-inProgress" class="list-group list-group-flush"></ul>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-xl-3 mb-3">
             <div class="card">
-              <h4 class="card-header bg-dark text-light">In Progress</h4>
-              <ul id="list-inReview" class="list-group-flush">
-                <li class="list-group-item">
-                  <span class="badge badge-primary badge-pill">05/28/2020</span>
-                  <p class="m-1">Sample task in review</p>
-                </li>
-              </ul>
+              <h4
+                class="card-header bg-dark text-light d-flex align-items-center"
+              >
+                In Review
+              </h4>
+              <ul id="list-inReview" class="list-group list-group-flush"></ul>
             </div>
           </div>
 
           <div class="col-12 col-md-6 col-xl-3 mb-3">
             <div class="card">
-              <h4 class="card-header bg-dark text-light">Done</h4>
-              <ul id="list-done" class="list-group-flush">
-                <li class="list-group-item">
-                  <span class="badge badge-primary badge-pill">05/28/2020</span>
-                  <p class="m-1">Sample task complete</p>
-                </li>
-              </ul>
+              <h4
+                class="card-header bg-dark text-light d-flex align-items-center"
+              >
+                Done
+              </h4>
+              <ul id="list-done" class="list-group list-group-flush"></ul>
             </div>
           </div>
         </div>
@@ -149,6 +154,7 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="./assets/script.js"></script>

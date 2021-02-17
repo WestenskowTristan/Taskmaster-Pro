@@ -41,6 +41,32 @@ var saveTasks = function () {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 };
 
+$(".card .list-group").sortable({
+  connectWith: $(".card .list-group"),
+  scroll: false,
+  tolerance: "pointer",
+  helper: "clone",
+  activate: function (event) {
+    console.log("activate", this);
+  },
+  deactivate: function (event) {
+    console.log("activate", this);
+  },
+  over: function (event) {
+    console.log("over", event.target);
+  },
+  out: function (event) {
+    console.log("out", event.target);
+  },
+  update: function (event) {
+    $(this)
+      .children()
+      .each(function () {
+        console.log($(this));
+      });
+  },
+});
+
 $(".list-group").on("click", "p", function () {
   let text = $(this).text().trim();
 
